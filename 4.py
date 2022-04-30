@@ -3,6 +3,7 @@ import numpy as np
 
 def Show(img):
     cv.imshow("Pic",img)
+    cv.imwrite('pic/4-1.jpg', img)
     cv.waitKey()
     cv.destroyAllWindows()
     
