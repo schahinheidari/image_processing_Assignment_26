@@ -19,7 +19,7 @@ while True:
         cv.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 2)
         frame[y:y+h, x:x+w] = cv.medianBlur(frame[y:y+h, x:x+w],35)
 
-    cv.imshow("thresh", frame)
+    cv.imshow("medianBlur", frame)
     if cv.waitKey(25) & 0xFF == ord("q"):
         break
 
